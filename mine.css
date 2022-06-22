@@ -97,7 +97,6 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-	font-size: 0.8vw;
 	transition: transform 1000ms;
 /* 	user-select: none; Не даёт взаимодействовать с текстом */
 	background-color: #fff;
@@ -371,11 +370,136 @@ margin-left: 2vw;
 /* Адаптив для теефона                              */
 /*::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
-/* 576px 
-@media screen  and (max-width: 576px) {
+/* 992px  */
+@media screen  and (max-width: 992px) {
+nav  {
+    display:none;
+  }
+  
+.information, .download, .social, .benefits {
+    display:none;
+  }
+  
+  .buttons {
+    flex-direction: column;
+  }
+  
+  .button2 {
+    margin-left: 0;
+    margin-top:10px;
+  }
+  
+ header {
+  margin-top: 0;
+ }
+  
+ body {
+  font-weight: 400; 
+/*  400 regular */
+  	font-size: 14px; 
+/*  0.75vw = 14 px (16:9)*/
+  max-width:84.1vw;
+  margin-left: auto;
+  margin-right: auto;
+  background: url('https://github.com/Egupych/lending_ROOF/blob/main/BG.png?raw=true'); background-size:103.3vw; background-repeat: no-repeat; background-position: top left;
+}
 
+header {
+  margin-top: 5.42vw;
+  height: 7.92vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+
+.logo img {
+  hight:52px;
+  width:65px;
+}
+
+.telephone {
+  	font-size: 0.64vw;
+	text-align: center;
+	letter-spacing: 0.04vw;
+	line-height: 1.2vw;
+}
+
+.number {
+	font-size: 1.18vw;
+	letter-spacing: 0.1vw;
+}
+
+
+.offer {
+   padding-left: 3.8vw;
+   margin-top: 4.5vw;
+}
+
+.heading {
+  font-size: 2.95vw;
+  line-height: 4.5vw;
+  text-align: center;
+  width: 35vw;
+}
+
+.afterHeadingWithCircles {
+	display: flex;
+	align-items: baseline;
+	padding-top: 1.02vw;
+	padding-bottom: 2.41vw;
+}
+
+.circles {
+	width: 5vw;
+}
+
+.afterHeading {
+margin-left: 2vw;
+  font-size: 1.71vw;
 
 }
 
-*/
+.button1 {
+    text-align: center;
+	background: var(--colorElement1);
+	box-shadow: inset 0px 0px 22px rgba(255, 255, 255, 0.25);
+	border-radius: 50vw;
+	display: flex;
+	width:20.09vw;
+	height:5.36vw;
+	letter-spacing: 0.04vw;
+	line-height: 1.2vw;
+	text-transform: uppercase;
+	color: #fff;
+	align-items: center;
+	justify-content: center; 
+}
+
+.button2 {
+  	text-align: center;
+	background: var(--colorElement2);
+	box-shadow: inset 0px 0px 22px rgba(255, 255, 255, 0.25);
+	border-radius: 50vw;
+	display: flex;
+	width:20.09vw;
+	height:5.36vw;
+	letter-spacing: 0.04vw;
+	line-height: 1.2vw;
+	text-transform: uppercase;
+	color: #fff;
+	align-items: center;
+	justify-content: center; 
+	margin-left: 1.2vw;
+}
+
+.arrowUpRight {
+  	width: 1.3vw;
+	margin-left: 1.2vw;
+}
+  
+}
+
 
