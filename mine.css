@@ -173,6 +173,12 @@ nav {
 	overflow: hidden;
 	padding: 0.5vw 0;
   cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.home img:hover {
+  transform: scale(0.92);
+  filter: brightness(0.95);
 }
 
 .information {
@@ -183,11 +189,27 @@ nav {
 }
 
 .download {
-  width: 11.79vw;
+  width: 13vw;
   font-size: 0.64vw;
-  text-align:center;
-  letter-spacing: 0.1vw;
+  text-align: center;
+  letter-spacing: 0.02vw;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
 }
+
+.downloadPrice {
+  border-bottom: dotted 0.15vw var(--colorElement1);
+  cursor:pointer;
+  transition: all 0.3s ease-out;
+} 
+
+.downloadPrice:hover  {
+  background-color: var(--colorElement1);
+  color: white;
+} 
+
+
 
 .social {
 /*   height:3.9vw; */
@@ -227,24 +249,13 @@ nav {
   filter: brightness(0.95);
 }
 
-/* .dotterLink  {
-	position: relative;
-	overflow: hidden;
-	padding: 0.5vw 0.5vw;
-  cursor: pointer;
-} */
+
 
 header {
   height: 7.92vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.download {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; 
 }
 
 .greenText {
@@ -270,12 +281,29 @@ header {
 	text-align: center;
 	letter-spacing: 0.04vw;
 	line-height: 1.2vw;
+  align-items: center;
+  display: flex;
+  flex-direction:column;
+
 }
 
 .number {
 	font-size: 1.18vw;
 	letter-spacing: 0.1vw;
 }
+
+.dotterLink  {
+  width: 5.77vw;
+  color: var(--colorElement1);
+  border-bottom: dotted 0.15vw var(--colorElement1);
+  cursor:pointer;
+  transition: all 0.3s ease-out;
+} 
+
+.dotterLink:hover  {
+  background-color: var(--colorElement1);
+  color: white;
+} 
 
 .benefits {
   width:12.05vw;
@@ -323,6 +351,8 @@ margin-left: 2vw;
 .buttons{
   display:flex;
   cursor:pointer;
+  flex-wrap: wrap;
+   width:50vw;
 }
 
 .button1 {
@@ -385,14 +415,33 @@ background: #FD9C49;
   display:flex;
 }
 
+.prompt {
+  margin-top: 1.9vw;
+  display: flex;
+  align-items: start;
+}
+
+.hand {
+  width: 1.3vw;
+  margin-right: 1vw;
+}
+
+.promptText {
+  text-align: center;
+}
+
+
 
 .popUp {
+  margin-top: 20vw;
+  padding-top: 5vw;
   width: 27.5vw;
   height: 32.5vw;
   background: #F5F5F5;
   border-radius: 1.75vw;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 
@@ -434,7 +483,6 @@ background: #FD9C49;
   cursor:pointer;
   margin-top: 1.2vw;
   margin-bottom: 0.95vw;
-   align-items: center;
 }
 
 .button4:hover {
@@ -476,6 +524,7 @@ background: #FD9C49;
     margin-bottom: 0.6vw;
 /*    text-align: 3vw left; */
 }
+
 
 
 
@@ -526,8 +575,6 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-
-
 
 
 .logo img {
