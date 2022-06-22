@@ -217,7 +217,7 @@ nav {
 
 .socialList img {
   width: 2.35vw;
-  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.3s ease-out;
   cursor:pointer;
 }
 
@@ -339,11 +339,11 @@ margin-left: 2vw;
 	color: #fff;
 	align-items: center;
 	justify-content: center; 
-  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.3s ease-out;
 }
 
 .button1:hover {
-background: #21E27C;
+  background: #21E27C;
 }
 
 .button2 {
@@ -361,7 +361,7 @@ background: #21E27C;
 	align-items: center;
 	justify-content: center; 
 	margin-left: 1.2vw;
-  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.3s ease-out;
 }
 
 .button2:hover {
@@ -385,12 +385,108 @@ background: #FD9C49;
   display:flex;
 }
 
+
+.popUp {
+  width: 27.5vw;
+  height: 32.5vw;
+  background: #F5F5F5;
+  border-radius: 1.75vw;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.button3 {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+  border-radius: 50vw;
+  width:20.09vw;
+	height:5.36vw;
+  text-align: center;
+  display: flex;
+	width:20.09vw;
+	height:5.36vw;
+	letter-spacing: 0.04vw;
+	line-height: 1.2vw;
+	text-transform: uppercase;
+	color: #000;
+	align-items: center;
+	justify-content: center; 
+  transition: all 0.3s ease-out;
+  cursor: number;
+}
+
+.button4 {
+  text-align: center;
+	background: var(--colorElement2);
+	box-shadow: inset 0px 0px 22px rgba(255, 255, 255, 0.25);
+	border-radius: 50vw;
+	display: flex;
+	width:20.09vw;
+	height:5.36vw;
+	letter-spacing: 0.04vw;
+	line-height: 1.2vw;
+	text-transform: uppercase;
+	color: #fff;
+	align-items: center;
+	justify-content: center; 
+  transition: all 0.3s ease-out;
+  cursor:pointer;
+  margin-top: 1.2vw;
+  margin-bottom: 0.95vw;
+   align-items: center;
+}
+
+.button4:hover {
+background: #FD9C49;
+}
+
+.arrowRight {
+  	width: 1.3vw;
+	margin-left: 1.2vw;
+}
+
+.button4:hover .arrowRight {
+	margin-left: 1vw;
+}
+
+.popUpP1{
+  font-size: 1.5vw;
+  line-height: 1.5vw;
+    text-align: center;
+  align-items: center;
+}
+
+.popUpP2{
+  font-size: 0.8vw;
+  margin-top: 0.7vw;
+    text-align: center;
+}
+
+.popUpP3{
+  font-size: 0.6vw;
+  margin-top: 1.2vw;
+    text-align: center;
+
+}
+
+.popUpP4{
+  font-size: 0.6vw;
+    margin-top: 1.4vw;
+    margin-bottom: 0.6vw;
+/*    text-align: 3vw left; */
+}
+
+
+
+
+
 /*::::::::::::::::::::::::::::::::::::::::::::::::::*/
 /* Адаптив для теефона                              */
 /*::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 /* 992px  */
-/* @media screen  and (max-width: 992px) {
+@media screen  and (max-width: 992px) {
 nav  {
     display:none;
   }
@@ -521,4 +617,4 @@ margin-left: 2vw;
   
 }
 
- */
+
