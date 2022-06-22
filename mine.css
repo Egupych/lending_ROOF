@@ -535,7 +535,7 @@ background: #FD9C49;
 /*::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 /* 992px  */
-@media screen  and (max-width: 992px) {
+/* @media screen  and (max-width: 992px) {
 nav  {
     display:none;
   }
@@ -559,9 +559,7 @@ nav  {
   
  body {
   font-weight: 400; 
-/*  400 regular */
-  	font-size: 14px; 
-/*  0.75vw = 14 px (16:9)*/
+  font-size: 14px; 
   max-width:84.1vw;
   margin-left: auto;
   margin-right: auto;
@@ -665,3 +663,4 @@ margin-left: 2vw;
 }
 
 
+ */
