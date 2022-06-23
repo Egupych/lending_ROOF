@@ -38,3 +38,37 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	}
 })
+
+
+
+
+
+
+
+
+var knopka = document.getElementById ('push');
+knopka.addEventListener('click',func1);
+ 
+function func1() {
+  var shadow = document.getElementById ('ts1');
+  if (shadow.style.marginTop !== '0px'){
+  	shadow.style.marginTop="0px";
+  }else{
+  	shadow.style.marginTop="-180px";
+  }
+  
+};
+
+
+var knopkaRotate = document.getElementById ('push');
+knopkaRotate.addEventListener('click',func2);
+ 
+function func2() {
+  var rotate = document.getElementById ('push');
+  if (rotate.style.transform !== 'rotate(90deg)'){
+	rotate.style.transform="rotate(90deg)";
+  }else{
+	rotate.style.transform="rotate(135deg)";
+  }
+  
+};
