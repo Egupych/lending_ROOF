@@ -95,6 +95,10 @@
   --colorElement2: #F38120;
 }
 
+.promptMobile {
+  display: none;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
 	transition: transform 1000ms;
@@ -672,8 +676,6 @@ header {
   line-height: 32px;
   text-align: center;
   width: 100%;
-
-  
 }
 
 .afterHeadingWithCircles {
@@ -681,6 +683,7 @@ header {
 	align-items: baseline;
 	padding-top: 10px;
 	padding-bottom: 2.41vw;
+  
 }
 
 .circles {
@@ -693,11 +696,25 @@ margin-left: 8px;
 
 }
    
+   .promptMobile {
+     display: contents;
+     width:100%;
+   }
+   
+   .hand {
+     width: 14px;
+     margin: 7px;
+   }
+   
+   .promptText{
+     font-size: 8px;
+     line-height: 12px;
+   }
+   
+   
    .buttons {
-     flex-direction: column;
-          display: flex;
-     	align-items: center;
-	justify-content: center; 
+     width:80%;
+     margin-top: 10px;
    }
 
    .button2 {
@@ -709,37 +726,46 @@ margin-left: 8px;
   text-align: center;
 	background: var(--colorElement1);
 	box-shadow: inset 0px 0px 22px rgba(255, 255, 255, 0.25);
-	width:300px;
-	height:50px;
+	width:320px;
+	height:60px;
 	letter-spacing: 0px;
 	line-height: 18px;
 	text-transform: uppercase;
 	color: #fff;
+       font-weight: 500;
+
 }
 
 .button2 {
-  	text-align: center;
+  text-align: center;
 	background: var(--colorElement2);
 	box-shadow: inset 0px 0px 22px rgba(255, 255, 255, 0.25);
 	border-radius: 50px;
-	display: flex;
-	width:300px;
-	height:50px;
+	width:320px;
+	height:60px;
 	letter-spacing: 0px;
 	line-height: 18px;
 	text-transform: uppercase;
 	color: #fff;
-	margin-left: 0vw;
-}
-
-.arrowUpRight {
-  	width: 1.3vw;
-	margin-left: 1.2vw;
+	margin-left: 0;
+  font-weight: 500;
+  
 }
    
+
+.arrowUpRight {
+  	width: 15px;
+	margin-left: 12px;
+}
+   
+   
+   .prompt {
+     display: none;
+   }
+   
    .form {
-     height: 50vw;
-       background: url('https://github.com/Egupych/lending_ROOF/blob/main/BG.png?raw=true'); background-size:100%; background-repeat: no-repeat; background-position: top left;
+     height: 400px;
+  background: url('https://s3-alpha-sig.figma.com/img/84cf/c38a/a25d5a1cd0189dc3ff1468c629ffc8f5?Expires=1656892800&Signature=VMTLYmdY-kidIGkRxRAv8mcwwDHjgO1TnrO2QDE0POvwxWewiGE4MauXVjS5Eijufa0Ar7zL3k09dREoo1G3N7sm7ElILTNHviYHVLoXm2HvepGXLHsqzVFt0lOlw0ABKl-r5WJjApEomVbuLebHodwxp~IV-T-P98dlOhlnDb8ez~yfOplskeavDDr1OQsaLRRcsu8BVqmqgDj2UzlDs2skElFMzP~RRsIp9qI1At79slf1pCWfgwXS3QVvHoR8CvuX-VGlHTWpP1FGEEoP3bfXkpf6xcNpmrEd~9au4aZOeaGAzDHu0yDFIAlU12R1lKG5abXXEWgxtQYnMNLM2w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA'); background-size:170%; background-repeat: no-repeat; background-position: top right;
    }
   
 }
