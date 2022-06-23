@@ -204,13 +204,17 @@ nav {
 }
 
 .download {
-  width: 13vw;
+
   font-size: 0.64vw;
   text-align: center;
   letter-spacing: 0.02vw;
   display: flex;
   align-items: center;
   justify-content: center; 
+}
+
+.download img{
+  width:5vw;
 }
 
 .downloadPrice {
@@ -224,6 +228,11 @@ nav {
   color: white;
 } 
 
+
+.logo img {
+  width:20vw;
+  padding-top:3vw;
+}
 
 
 .social {
@@ -282,9 +291,6 @@ header {
   font-weight: 600;
 }
 
-.logo img {
-  width:14.67vw;
-}
 
 
 .socialList {
