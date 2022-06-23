@@ -567,7 +567,7 @@ background: #FD9C49;
 /*::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 /* 992px  */
- @media screen  and (max-width: 992px) {
+ @media screen  and (max-width: 450px) {
 nav  {
     display:none;
   }
@@ -736,7 +736,7 @@ margin-left: 8px;
   flex-direction: column;
   align-items: center;
 }  
-   .popUpP1{
+   .popUpP1 {
   font-size: 18px;
   line-height: 25px;
 }
