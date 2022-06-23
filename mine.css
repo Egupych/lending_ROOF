@@ -290,6 +290,7 @@ header {
 .number {
 	font-size: 1.18vw;
 	letter-spacing: 0.1vw;
+	color: #000;
 }
 
 .dotterLink  {
@@ -523,6 +524,51 @@ background: #FD9C49;
     margin-top: 1.4vw;
     margin-bottom: 0.6vw;
 /*    text-align: 3vw left; */
+}
+
+.checkbox__input {
+  display: none;
+
+}
+
+.checkbox__input::checked +.checkbox__label::after {
+  transform: scale(1)
+}
+
+.checkbox__label {
+  font-style: 16px;
+  line-height: 140%;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.checkbox__label::before {
+  content: "";
+  flex: 0 0 24px;
+  height: 24px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin: 0px 10px 0px 0px;
+}
+
+.checkbox__label::after {
+  transition: transform 0.5s ease 0s;
+  content: "";
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background-color: #F38120;
+  border-radius: 4px;
+  transform: scale(0);
+}
+
+.checkbox__label a {
+  color: #12C868;
 }
 
 
